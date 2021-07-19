@@ -6,9 +6,19 @@
             <img src="../assets/logo.png" alt="">
         </div>
         <!-- 内容表单区 -->
-        <el-form label-width='80px'>
-          <el-form-item label="活动名称">
+        <el-form label-width='0px'>
+          <!-- 用户名 -->
+          <el-form-item>
             <el-input></el-input>
+          </el-form-item>
+          <!-- 密码 -->
+          <el-form-item>
+            <el-input></el-input>
+          </el-form-item>
+          <!-- 按钮区域 -->
+          <el-form-item class="btns">
+            <el-button type="primary" plain>登录</el-button>
+            <el-button type="info" plain>重置</el-button>
           </el-form-item>
         </el-form>
     </div>
@@ -54,5 +64,8 @@ export default {
     border-radius: 50%;
     background-color: #eee;
   }
-
+  .btns{
+    display: flex;
+    justify-content: flex-end;
+  }
 </style>
